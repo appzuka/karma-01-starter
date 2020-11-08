@@ -1,2 +1,3 @@
 node_modules
 yarn-error.log
+src/04-webpack/test-component-bundle*
