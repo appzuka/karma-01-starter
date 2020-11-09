@@ -12,6 +12,7 @@
     "karma": "^5.2.3",
     "karma-chrome-launcher": "^3.1.0",
     "karma-jasmine": "^4.0.1",
+    "karma-spec-reporter": "^0.0.32",
     "puppeteer": "^5.4.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -22,7 +23,11 @@
   },
   "scripts": {
     "test": "karma start",
-    "bundle": "webpack -c  ./src/04-webpack/webpack.config.js"
+    "test1" : "karma start ./src/01-simple/karma-01.conf.js",
+    "test2" : "karma start ./src/02-external/karma-02.conf.js",
+    "test3" : "karma start ./src/03-react/karma-03.conf.js",
+    "test4" : "karma start ./src/04-webpack/karma-04.conf.js",
+    "bundle4": "webpack -c  ./src/04-webpack/webpack.config.js"
   },
   "keywords": []
 }

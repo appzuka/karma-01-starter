@@ -1,5 +1,5 @@
 
-describe('Test replace contents of div using external component', function () {
+describe('Test replace contents of div using external React component', function () {
 
   beforeAll(function () {
     var fixture = '<div id="fixture"></div>';

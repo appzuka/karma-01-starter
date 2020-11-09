@@ -1,5 +1,5 @@
 
-describe('Test replace contents of div using functional component', function () {
+describe('Test replace contents of div using React functional component', function () {
 
   beforeAll(function () {
     var fixture = '<div id="fixture"></div>';

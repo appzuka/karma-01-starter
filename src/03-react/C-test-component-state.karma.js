@@ -1,5 +1,5 @@
 
-describe('Test functional component with state', function () {
+describe('Test React functional component with state', function () {
 
   beforeEach(function () {
     var fixture = '<div id="fixture"></div>';
