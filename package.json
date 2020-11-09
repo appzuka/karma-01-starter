@@ -7,6 +7,7 @@
     "@types/jasmine": "^3.6.1",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
+    "concurrently": "^5.3.0",
     "jasmine": "3.6.2",
     "jasmine-terminal-reporter": "^1.0.3",
     "karma": "^5.2.3",
@@ -23,11 +24,12 @@
   },
   "scripts": {
     "test": "karma start",
-    "test1" : "karma start ./src/01-simple/karma-01.conf.js",
-    "test2" : "karma start ./src/02-external/karma-02.conf.js",
-    "test3" : "karma start ./src/03-react/karma-03.conf.js",
-    "test4" : "karma start ./src/04-webpack/karma-04.conf.js",
-    "bundle4": "webpack -c  ./src/04-webpack/webpack.config.js"
+    "test1": "karma start ./src/01-simple/karma-01.conf.js",
+    "test2": "karma start ./src/02-external/karma-02.conf.js",
+    "test3": "karma start ./src/03-react/karma-03.conf.js",
+    "test4": "karma start ./src/04-webpack/karma-04.conf.js",
+    "bundle4": "webpack -c  ./src/04-webpack/webpack.config.js",
+    "run4": "concurrently \"webpack -c  ./src/04-webpack/webpack.config.js --watch\" \"karma start ./src/04-webpack/karma-04.conf.js\""
   },
   "keywords": []
 }
